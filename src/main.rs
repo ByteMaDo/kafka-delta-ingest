@@ -504,7 +504,7 @@ fn convert_matches_to_message_format(
     
     if ingest_matches.contains_id("soe-avro") {
         return to_schema_path(ingest_matches.get_one::<String>("soe-avro"))
-            .map( MessageFormat::SoeAvro);
+            .map(MessageFormat::SoeAvro);
     }
 
     to_schema_source(ingest_matches.get_one::<String>("json"), true).map(MessageFormat::Json)
