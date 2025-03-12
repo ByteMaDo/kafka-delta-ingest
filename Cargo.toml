@@ -25,8 +25,8 @@ rdkafka = { version = "0.28", features = ["ssl"] }
 schema_registry_converter = { version = "3.1.0", features = ["easy", "json", "avro"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-strum = "0.20"
-strum_macros = "0.20"
+strum = "0.27.1"
+strum_macros = "0.27.1"
 thiserror = "1"
 tokio = { version = "1", features = ["full"] }
 tokio-stream = { version = "0", features = ["fs"] }
